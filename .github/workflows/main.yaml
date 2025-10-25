@@ -37,12 +37,11 @@ jobs:
           echo "Linting code with go fmt and go vet..."
           go fmt $(go list ./...)
           go vet $(go list ./...)
-     
-      - name: Clean Go Build Cache
-        run: go clean -cache -testcache -modcache
 
       - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v8
+        with:
+          args: --verbose
 
   # Job para rodar os testes
   test:

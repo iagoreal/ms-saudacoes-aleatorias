@@ -10,6 +10,7 @@ on:
 
 env:
   DOCKER_USER: iagoreal
+  DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
   SERVICE_NAME: saudacoes-aleatorias
 
 jobs:

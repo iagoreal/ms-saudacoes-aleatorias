@@ -1,4 +1,4 @@
-name: CI/CD - Saudações Aleatórias
+name: CI/CD - Saudações Aleatorias
 
 on:
   push:
